@@ -1,5 +1,3 @@
-# Submitting Forms: The AngularJS Way
+# Ryan's Testing Tool: PayPal Payflow Pro
 
-Code to complement the tutorial: [Submitting Forms: The AngularJS Way](http://scotch.io/tutorials/javascript/submitting-ajax-forms-the-angularjs-way)
-
-A look at processing AJAX forms using jQuery vs Angular.
+A tool to test a PayPal's Payflow Pro credit card processing.
