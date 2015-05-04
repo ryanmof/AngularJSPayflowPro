@@ -30,7 +30,7 @@
 			        method  : 'POST',
 			        url     : 'process.php',
 			        data    : $.param($scope.formData),  // pass in data as strings
-			        headers : { 'Content-Type': 'text/name value'}//, 'Content-Length': 'strlen($formDATA)', 'Host': '/localhost', 'X-VPS-REQUEST-ID':  '. rand(1, 1000000000)', 'X-VPS-CLIENT-TIMEOUT': '45' }  // set the headers so angular is passing info as form data (not request payload)//
+			        headers : { 'Content-Type': 'text/namevalue', 'Content-Length': 'strlen($formDATA)', 'Host': '/localhost', 'X-VPS-REQUEST-ID':  'rand(1, 1000000000)', 'X-VPS-CLIENT-TIMEOUT': '45' }  // set the headers so angular is passing info as form data (not request payload)//
 			    })
 			        .success(function(data) {
 			            console.log(data);
