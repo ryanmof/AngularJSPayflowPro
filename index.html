@@ -4,10 +4,10 @@
 	<title>PayPal Tester</title>
 
 	<!-- LOAD BOOTSTRAP CSS -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 	<!-- LOAD JQUERY -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<!-- LOAD ANGULAR -->
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
 
@@ -30,7 +30,7 @@
 			        method  : 'POST',
 			        url     : 'process.php',
 			        data    : $.param($scope.formData),  // pass in data as strings
-			        headers : { 'Content-Type': 'text/name value', 'Content-Length': '277', 'Host': 'pilot-payflowpro.paypal.com' }  // set the headers so angular is passing info as form data (not request payload)
+			        headers : { 'Content-Type': 'text/name value'}//, 'Content-Length': 'strlen($formDATA)', 'Host': '/localhost', 'X-VPS-REQUEST-ID':  '. rand(1, 1000000000)', 'X-VPS-CLIENT-TIMEOUT': '45' }  // set the headers so angular is passing info as form data (not request payload)//
 			    })
 			        .success(function(data) {
 			            console.log(data);
